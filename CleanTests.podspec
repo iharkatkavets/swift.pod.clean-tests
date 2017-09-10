@@ -31,7 +31,14 @@ XCTest extensions which I often use to write clean tests. Inspired by Robert C.M
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CleanTests/Classes/**/*'
-  
+  s.weak_framework = "XCTest"
+  s.requires_arc = true
+  s.pod_target_xcconfig = {
+    'ENABLE_BITCODE' => 'NO',
+    'OTHER_LDFLAGS' => '-weak-lswiftXCTest',
+    'OTHER_SWIFT_FLAGS' => '$(inherited) -suppress-warnings',
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
+  }
   # s.resource_bundles = {
   #   'CleanTests' => ['CleanTests/Assets/*.png']
   # }

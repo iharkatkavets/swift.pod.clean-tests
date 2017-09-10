@@ -8,25 +8,25 @@
 
 import XCTest
 
-func assertPairsEqual<T: Equatable>(expected: T, actual: T, file: StaticString = #file, line: UInt = #line) {
+public func assertPairsEqual<T: Equatable>(expected: T, actual: T, file: StaticString = #file, line: UInt = #line) {
     if actual != expected {
         XCTFail("Expected \(expected) but was \(actual)", file: file, line: line)
     }
 }
 
-func assertEqualNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertEqualNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual != nil {
         XCTFail("Expected nil but was \(String(describing: actual))", file: file, line: line)
     }
 }
 
-func assertEqualNotNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertEqualNotNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual == nil {
         XCTFail("Expected object but was nil", file: file, line: line)
     }
 }
 
-func assertThrowsError<T, U>(expected: T, _ expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) where T:Error, T:Equatable {
+public func assertThrowsError<T, U>(expected: T, _ expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) where T:Error, T:Equatable {
     do {
         let _ = try expression()
         XCTFail("Expected error \(expected) but expression did not throwed error", file: file, line: line)
