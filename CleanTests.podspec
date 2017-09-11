@@ -29,6 +29,7 @@ XCTest extensions which I often use to write clean tests. Inspired by Robert C.M
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '10.0'
 
   s.source_files = 'CleanTests/Classes/**/*'
   s.weak_framework = "XCTest"
