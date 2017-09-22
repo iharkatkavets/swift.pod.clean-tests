@@ -30,6 +30,7 @@ XCTest extensions which I often use to write clean tests. Inspired by Robert C.M
 
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '10.0'
+  s.osx.deployment_target = '10.0'
 
   s.source_files = 'CleanTests/Classes/**/*'
   s.weak_framework = "XCTest"
