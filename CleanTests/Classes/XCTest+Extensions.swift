@@ -41,3 +41,11 @@ public func assertThrowsError<T, U>(expected: T, _ expression: @autoclosure () t
         }
     }
 }
+
+public func assertThrowsError<U>(expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) {
+    do {
+        let _ = try expression()
+        XCTFail("Expected error but expression did not throwed error", file: file, line: line)
+    } catch {
+    }
+}
