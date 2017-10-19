@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A8F2DBEA98960EBBF8DE0F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2A8F2DBEA98960EBBF8DE0F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3174C6806799BD73C92FFE65 /* Pods_CleanTests_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanTests_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* CleanTests_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanTests_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,9 +42,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		64AFC780B80419A2A424B8C5 /* Pods-CleanTests_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanTests_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanTests_Example/Pods-CleanTests_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6FC424F5BD69C28968F6780E /* Pods-CleanTests_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanTests_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanTests_Tests/Pods-CleanTests_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A7B65F2F42904A09C4B9CAC7 /* CleanTests.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CleanTests.podspec; path = ../CleanTests.podspec; sourceTree = "<group>"; };
+		A7B65F2F42904A09C4B9CAC7 /* CleanTests.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CleanTests.podspec; path = ../CleanTests.podspec; sourceTree = "<group>"; };
 		D01C4ADBB4217B5A35BA2F0D /* Pods-CleanTests_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanTests_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanTests_Tests/Pods-CleanTests_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DDE990D3C2443AFD077AE58F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DDE990D3C2443AFD077AE58F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E0287C521B9D0B448C4A764D /* Pods-CleanTests_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanTests_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanTests_Example/Pods-CleanTests_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ED3AD395ECB5796E8A10C1FD /* Pods_CleanTests_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanTests_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = L454S9SQH7;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -505,12 +506,14 @@
 			baseConfigurationReference = 64AFC780B80419A2A424B8C5 /* Pods-CleanTests_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = CleanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kotkovets.CleanTests-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -519,12 +522,14 @@
 			baseConfigurationReference = E0287C521B9D0B448C4A764D /* Pods-CleanTests_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L454S9SQH7;
 				INFOPLIST_FILE = CleanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.kotkovets.CleanTests-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
