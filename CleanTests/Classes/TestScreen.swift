@@ -12,11 +12,6 @@ import XCTest
 open class TestScreen {
     public var app: XCUIApplication
 
-    @available(tvOS 10.0, *)
-    public var remoteControl: XCUIRemote {
-        return XCUIRemote()
-    }
-
     public init(in app: XCUIApplication) {
         self.app = app
     }
@@ -35,8 +30,12 @@ open class TestScreen {
     }
 }
 
-@available(iOS 9.0, tvOS 10.0, *)
+#if os(tvOS)
 public extension TestScreen {
+    public var remoteControl: XCUIRemote {
+        return XCUIRemote()
+    }
+
     func remoteSwipeRight(times count: Int = 1) {
         for _ in 0..<count {
             self.remoteControl.press(.right)
@@ -73,3 +72,4 @@ public extension TestScreen {
         }
     }
 }
+#endif
