@@ -2,7 +2,7 @@
   "name": "CleanTests",
   "version": "0.1.0",
   "summary": "XCTest extensions to write clean test.",
-  "description": "XCTest extensions which I often use to write clean tests. Inspired by Robert C.Martin's book Clean Code.",
+  "description": "XCTest extensions which I often use to write clean tests. Inspired by Robert C.Martin's book \"Clean Code\" and Rambler's sessions.",
   "homepage": "https://github.com/igorkotkovets/pod.swift.clean-tests",
   "license": {
     "type": "MIT",
@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0",
+    "ios": "9.0",
     "tvos": "10.0",
     "osx": "10.10"
   },

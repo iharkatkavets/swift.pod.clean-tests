@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "CleanTests_Example.app"
-               BlueprintName = "CleanTests_Example"
-               ReferencedContainer = "container:CleanTests.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Tests_iOS.xctest"
-               BlueprintName = "Tests_iOS"
+               BlueprintIdentifier = "D81EE9F61F9B2EFE00AD3F3C"
+               BuildableName = "CleanTests_tvOS.app"
+               BlueprintName = "CleanTests_tvOS"
                ReferencedContainer = "container:CleanTests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +33,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Tests_iOS.xctest"
-               BlueprintName = "Tests_iOS"
+               BlueprintIdentifier = "D81EEA061F9B2EFE00AD3F3C"
+               BuildableName = "CleanTests_tvOSTests.xctest"
+               BlueprintName = "CleanTests_tvOSTests"
+               ReferencedContainer = "container:CleanTests.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D81EEA111F9B2EFE00AD3F3C"
+               BuildableName = "CleanTests_tvOSUITests.xctest"
+               BlueprintName = "CleanTests_tvOSUITests"
                ReferencedContainer = "container:CleanTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +53,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CleanTests_Example.app"
-            BlueprintName = "CleanTests_Example"
+            BlueprintIdentifier = "D81EE9F61F9B2EFE00AD3F3C"
+            BuildableName = "CleanTests_tvOS.app"
+            BlueprintName = "CleanTests_tvOS"
             ReferencedContainer = "container:CleanTests.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,9 +77,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CleanTests_Example.app"
-            BlueprintName = "CleanTests_Example"
+            BlueprintIdentifier = "D81EE9F61F9B2EFE00AD3F3C"
+            BuildableName = "CleanTests_tvOS.app"
+            BlueprintName = "CleanTests_tvOS"
             ReferencedContainer = "container:CleanTests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -100,9 +96,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "CleanTests_Example.app"
-            BlueprintName = "CleanTests_Example"
+            BlueprintIdentifier = "D81EE9F61F9B2EFE00AD3F3C"
+            BuildableName = "CleanTests_tvOS.app"
+            BlueprintName = "CleanTests_tvOS"
             ReferencedContainer = "container:CleanTests.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

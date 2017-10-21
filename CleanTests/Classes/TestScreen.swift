@@ -8,9 +8,8 @@
 import Foundation
 import XCTest
 
-@available(iOS 9.0, *)
+@available(iOS 9.0, tvOS 10.0, *)
 open class TestScreen {
-    @available(iOS 9.0, *)
     public var app: XCUIApplication
 
     @available(tvOS 10.0, *)
@@ -36,6 +35,7 @@ open class TestScreen {
     }
 }
 
+@available(iOS 9.0, tvOS 10.0, *)
 public extension TestScreen {
     func remoteSwipeRight(times count: Int = 1) {
         for _ in 0..<count {

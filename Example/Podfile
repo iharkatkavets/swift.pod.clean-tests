@@ -1,11 +1,25 @@
 use_frameworks!
 
+
 target 'CleanTests_Example' do
+    platform :ios, '9.0'
+end
+
+target 'Tests_iOS' do
+    platform :ios, '9.0'
   pod 'CleanTests', :path => '../'
+end
 
-  target 'CleanTests_Tests' do
-    inherit! :search_paths
+target 'CleanTests_tvOS' do
+    platform :tvos, '10.0'
+end
 
-    
-  end
+target 'CleanTests_tvOSTests' do
+    platform :tvos, '10.0'
+  pod 'CleanTests', :path => '../'
+end
+
+target 'CleanTests_tvOSUITests' do
+    platform :tvos, '10.0'
+  pod 'CleanTests', :path => '../'
 end
