@@ -10,17 +10,23 @@ import XCTest
 
 public func assertPairsEqual<T: Equatable>(expected: T, actual: T, file: StaticString = #file, line: UInt = #line) {
     if actual != expected {
-        XCTFail("Expected \(expected) but was \(actual)", file: file, line: line)
+        XCTFail("Expected result is \(expected) but was \(actual)", file: file, line: line)
     }
 }
 
-public func assertEqualNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertTrue(_ actual: Bool, file: StaticString = #file, line: UInt = #line) {
+    if actual != true {
+        XCTFail("Expected result be equal to \'true\' but was \(actual)", file: file, line: line)
+    }
+}
+
+public func assertEqualNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual != nil {
         XCTFail("Expected nil but was \(String(describing: actual))", file: file, line: line)
     }
 }
 
-public func assertEqualNotNil<T>(actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertEqualNotNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual == nil {
         XCTFail("Expected object but was nil", file: file, line: line)
     }
@@ -42,10 +48,18 @@ public func assertThrowsError<T, U>(expected: T, _ expression: @autoclosure () t
     }
 }
 
-public func assertThrowsError<U>(expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) {
+public func assertThrowsError<U>(_ expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) {
     do {
         let _ = try expression()
-        XCTFail("Expected error but expression did not throwed error", file: file, line: line)
+        XCTFail("Expression didn't throw error but should", file: file, line: line)
     } catch {
+    }
+}
+
+public func assertNotThrowsError<U>(_ expression: @autoclosure () throws -> U, file: StaticString = #file, line: UInt = #line) {
+    do {
+        let _ = try expression()
+    } catch {
+        XCTFail("Expression throwed error but it shouldn't", file: file, line: line)
     }
 }
