@@ -20,13 +20,19 @@ public func assertTrue(_ actual: Bool, file: StaticString = #file, line: UInt = 
     }
 }
 
-public func assertEqualNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertFalse(_ actual: Bool, file: StaticString = #file, line: UInt = #line) {
+    if actual != false {
+        XCTFail("Expected result be equal to \'false\' but was \(actual)", file: file, line: line)
+    }
+}
+
+public func assertNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual != nil {
         XCTFail("Expected \"nil\" but actual is \(String(describing: actual))", file: file, line: line)
     }
 }
 
-public func assertEqualNotNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
+public func assertNotNil<T>(_ actual: T?, file: StaticString = #file, line: UInt = #line) {
     if actual == nil {
         XCTFail("Expected non-nil object but actual is nil", file: file, line: line)
     }
