@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-@available(iOS 9.0, tvOS 10.0, *)
+@available(iOS 9.0, tvOS 10.0, macOS 10.11, *)
 open class TestScreen {
     public var app: XCUIApplication
 
