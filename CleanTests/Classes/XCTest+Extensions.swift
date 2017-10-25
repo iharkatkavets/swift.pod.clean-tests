@@ -20,7 +20,7 @@ public func assertTrue(_ actual: Bool, file: StaticString = #file, line: UInt = 
     }
 }
 
-public func assertTrue(_ actual: Bool, file: StaticString = #file, line: UInt = #line) {
+public func assertFalse(_ actual: Bool, file: StaticString = #file, line: UInt = #line) {
     if actual != false {
         XCTFail("Expected result be equal to \'false\' but was \(actual)", file: file, line: line)
     }
