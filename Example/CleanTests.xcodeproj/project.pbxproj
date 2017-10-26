@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		145BDC1963CC8049958513B7 /* Pods_CleanTests_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066B361DDC454AC25FFEB4F2 /* Pods_CleanTests_tvOSTests.framework */; };
-		439D7B56E035ABC3B33B826F /* Pods_CleanTests_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3174C6806799BD73C92FFE65 /* Pods_CleanTests_Example.framework */; };
 		4BFF16C44AC5C00BE07CD215 /* Pods_CleanTests_tvOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076DEA46BF45A50A802B6F75 /* Pods_CleanTests_tvOSUITests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -16,7 +15,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7B4E501E1D6010BF563FD0A5 /* Pods_CleanTests_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3AD395ECB5796E8A10C1FD /* Pods_CleanTests_Tests.framework */; };
 		805EF881610A8C8F9F1DD368 /* Pods_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3063C9AD7A882E779189B7 /* Pods_Tests_iOS.framework */; };
 		D81EE9FA1F9B2EFE00AD3F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EE9F91F9B2EFE00AD3F3C /* AppDelegate.swift */; };
 		D81EE9FC1F9B2EFE00AD3F3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81EE9FB1F9B2EFE00AD3F3C /* ViewController.swift */; };
@@ -104,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439D7B56E035ABC3B33B826F /* Pods_CleanTests_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4E501E1D6010BF563FD0A5 /* Pods_CleanTests_Tests.framework in Frameworks */,
 				805EF881610A8C8F9F1DD368 /* Pods_Tests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,9 +542,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CleanTests_tvOS/Pods-CleanTests_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -563,10 +564,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tests_iOS/Pods-Tests_iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CleanTests-iOS/CleanTests.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CleanTests.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
