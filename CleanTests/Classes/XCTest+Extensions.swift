@@ -8,9 +8,9 @@
 
 import XCTest
 
-public func assertPairsEqual<T: Equatable>(expected: T, actual: T, file: StaticString = #file, line: UInt = #line) {
+public func assertPairsEqual<T: Equatable>(expected: T, actual: T, message: String = "", file: StaticString = #file, line: UInt = #line) {
     if actual != expected {
-        XCTFail("Expected result is \"\(expected)\" but actual is \"\(actual)\"", file: file, line: line)
+        XCTFail("Expected result is \"\(expected)\" but actual is \"\(actual)\" \(message)", file: file, line: line)
     }
 }
 
@@ -62,7 +62,7 @@ public func assertThrowsError<U>(_ expression: @autoclosure () throws -> U, file
     }
 }
 
-public func assertNotThrowsError<U>(_ expression: () throws -> U, file: StaticString = #file, line: UInt = #line) {
+public func assertNoThrow<U>(_ expression: () throws -> U, file: StaticString = #file, line: UInt = #line) {
     do {
         let _ = try expression()
     } catch {
