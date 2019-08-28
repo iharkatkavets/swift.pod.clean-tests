@@ -7,16 +7,16 @@ end
 
 target 'Tests_iOS' do
   platform :ios, '9.0'
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift',    '~> 5.0'
+  pod 'RxCocoa',    '~> 5.0'
   
   pod 'CleanTests', :path => '../'
 end
 
 target 'CleanTests_tvOS' do
   platform :tvos, '10.0'  
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift',    '~> 5.0'
+  pod 'RxCocoa',    '~> 5.0'
 end
 
 target 'CleanTests_tvOSTests' do
