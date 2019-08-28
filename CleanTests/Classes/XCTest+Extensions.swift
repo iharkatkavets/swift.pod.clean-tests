@@ -14,6 +14,12 @@ public func assertPairsEqual<T: Equatable>(expected: T, actual: T, message: Stri
     }
 }
 
+public func assertPairsEqual<T: Equatable>(expected: T?, actual: T?, message: String = "", file: StaticString = #file, line: UInt = #line) {
+    if actual != expected {
+        XCTFail("Expected result is \"\(expected)\" but actual is \"\(actual)\" \(message)", file: file, line: line)
+    }
+}
+
 public func assertTrue(_ actual: Bool, file: StaticString = #file, line: UInt = #line) {
     if actual != true {
         XCTFail("Expected result to be equal to \"true\" but actual is \(actual)", file: file, line: line)

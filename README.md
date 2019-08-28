@@ -1,15 +1,14 @@
 # CleanTests
 
-[![CI Status](http://img.shields.io/travis/Igor Kotkovets/CleanTests.svg?style=flat)](https://travis-ci.org/Igor Kotkovets/CleanTests)
-[![Version](https://img.shields.io/cocoapods/v/CleanTests.svg?style=flat)](http://cocoapods.org/pods/CleanTests)
-[![License](https://img.shields.io/cocoapods/l/CleanTests.svg?style=flat)](http://cocoapods.org/pods/CleanTests)
-[![Platform](https://img.shields.io/cocoapods/p/CleanTests.svg?style=flat)](http://cocoapods.org/pods/CleanTests)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+ios '9.0'      
+tvos '10.0'    
+osx '10.10'    
+
 
 ## Installation
 
@@ -17,7 +16,11 @@ CleanTests is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CleanTests', :git => 'https://github.com/igorkotkovets/pod.swift.clean-tests.git'
+pod 'CleanTests', :git => 'https://github.com/igorkotkovets/pod.swift.clean-tests.git', :tag => '0.1.1'
+```
+or 
+```ruby
+pod 'CleanTests', :git => 'https://github.com/igorkotkovets/pod.swift.clean-tests.git', :branch => 'master'
 ```
 
 ## Author
